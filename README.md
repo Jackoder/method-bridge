@@ -1,5 +1,5 @@
 # Method Bridge
-提供一个简单的方法调用方案
+[![](https://jitpack.io/v/Jackoder/method-bridge.svg)](https://jitpack.io/#Jackoder/method-bridge)
 
 ## 特性
 
@@ -7,10 +7,24 @@
 * 跨对象、跨页面、跨线程等方法调用
 
 ## 添加依赖
-* Gradle
 
+* Gradle
+ 
+配置仓库
 ```gradle
-compile 'com.github.Jackoder:method-bridge:1.0.5'
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+配置依赖
+```gradle
+dependencies {
+    compile 'com.github.Jackoder:method-bridge:1.0'
+}
 ```
 
 ## 混淆配置
