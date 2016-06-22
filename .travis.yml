@@ -48,5 +48,6 @@ script:
   # - android list target
   # - ./gradlew connectedAndroidTest
 
-after_success:
-    - ./gradlew :library:test coveralls
+env:
+  global:
+    - COVERALLS_REPO_TOKEN=vW4DerGBuZhmlt648DR97KRvg6ammcbP3
