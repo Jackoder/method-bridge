@@ -51,3 +51,12 @@ artifacts {
     archives sourcesJar
     archives javadocJar
 }
+
+coveralls {
+    jacocoReportPath = "${buildDir}/reports/coverage/debug/report.xml"
+}
+
+tasks.coveralls {
+    dependsOn 'connectedAndroidTest'
+    onlyIf { System.env.'CI' }
+}
