@@ -1,4 +1,5 @@
 [![](https://jitpack.io/v/Jackoder/method-bridge.svg)](https://jitpack.io/#Jackoder/method-bridge)
+[![](https://travis-ci.org/Jackoder/method-bridge.svg?branch=master)](https://travis-ci.org/Jackoder/method-bridge.svg?branch=master)
 
 # Method Bridge
 一个简单的方法调用方案
