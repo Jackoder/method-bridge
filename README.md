@@ -1,12 +1,14 @@
 # Method Bridge
 [![](https://jitpack.io/v/Jackoder/method-bridge.svg)](https://jitpack.io/#Jackoder/method-bridge)
 
-## 特性
+特性
+-------
 
 * 方法动态注册
 * 跨对象、跨页面、跨线程等方法调用
 
-## 添加依赖
+添加依赖
+-------
  
 配置仓库
 ```gradle
@@ -25,7 +27,9 @@ dependencies {
 }
 ```
 
-## 混淆配置
+混淆配置
+-------
+
 ```proguard
 # method-bridge
 -keepnames class com.jackoder.methodbridge.ann.* {*;}
@@ -34,7 +38,8 @@ dependencies {
 }
 ```
 
-## 使用
+使用
+-------
 
 - 声明
 
@@ -103,7 +108,8 @@ public class B {
 }
 ```
 
-## 其它
+其它
+-------
 
 #### 处理异常
 
@@ -133,7 +139,9 @@ public void handleSafe() {
 
 `MethodBridge.contains(String name)` 方法可判断方法是否注册
 
-## 问题
+问题
+-------
+
 - 优点
 
 过去跨对象间的方法调用可以通过接口、传入对象等方式实现，但需要添加许多额外的代码，使得结构更为复杂。使用该方案一定程度上可以解耦代码，调用方更为实现更加简单。
@@ -150,6 +158,23 @@ public void handleSafe() {
 
 暂时还不支持
 
-- 项目地址
+- Bug与建议
+- 
+欢迎提交提交Bug与建议到 [Issues](https://github.com/Jackoder/method-bridge/issues) 中。
 
-[https://github.com/Jackoder/method-bridge](https://github.com/Jackoder/method-bridge)
+License
+-------
+
+    Copyright 2016 Jake Wharton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
