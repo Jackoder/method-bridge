@@ -1,5 +1,7 @@
 language: android
 
+sudo false
+
 jdk:
   - oraclejdk7
 
@@ -47,4 +49,4 @@ script:
   # - ./gradlew connectedAndroidTest
 
 after_success:
-    - ./gradlew coveralls
+    - ./gradlew test coveralls
