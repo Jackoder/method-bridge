@@ -47,3 +47,6 @@ cache:
 # script:
   # - android list target
   # - ./gradlew connectedAndroidTest
+
+before_install:
+  - chmod +x gradlew

@@ -4,10 +4,6 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.Jackoder'
 version = parent.version
 
-coveralls {
-    jacocoReportPath = "${buildDir}/reports/coverage/debug/report.xml"
-}
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
