@@ -18,7 +18,7 @@ allprojects {
         mockitoVersion = '1.9.5'
         dexmakerVersion = '1.0'
         espressoVersion = '2.0'
-        testingSupportLibVersion = '0.1'
+        testingSupportLibVersion = '0.4'
 
         appLibs = [
                 androidsupport   : "com.android.support:support-v4:${androidSupportVersion}",
