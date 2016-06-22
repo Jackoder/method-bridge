@@ -45,4 +45,6 @@ cache:
 script:
   # - android list target
   # - ./gradlew connectedAndroidTest
-  - ./gradlew connectedAndroidTest coveralls
+
+after_success:
+    - coveralls
