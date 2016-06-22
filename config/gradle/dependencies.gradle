@@ -1,0 +1,40 @@
+allprojects {
+    repositories {
+        jcenter()
+//        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+
+    ext {
+        //Android
+        androidBuildToolsVersion = "22.0.1"
+        androidMinSdkVersion = 9
+        androidTargetSdkVersion = 22
+        androidCompileSdkVersion = 22
+        androidSupportVersion = "22.2.1"
+
+        //Testing
+        robolectricVersion = '2.4'
+        jUnitVersion = '4.11'
+        mockitoVersion = '1.9.5'
+        dexmakerVersion = '1.0'
+        espressoVersion = '2.0'
+        testingSupportLibVersion = '0.1'
+
+        appLibs = [
+                androidsupport   : "com.android.support:support-v4:${androidSupportVersion}",
+                appcompat        : "com.android.support:appcompat-v7:${androidSupportVersion}@aar",
+                recyclerView     : "com.android.support:recyclerview-v7:${androidSupportVersion}@aar",
+        ]
+
+        appTestLibs = [
+                junit            : "junit:junit:4.12",
+                robolectric      : "org.robolectric:robolectric:3.0",
+                burst            : "com.squareup.burst:burst-junit4:1.1.0",
+                mockito          : "org.mockito:mockito-core:${mockitoVersion}",
+                dexmaker         : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+                dexmakerMockito  : "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+                espresso         : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+                testingSupportLib: "com.android.support.test:testing-support-lib:${testingSupportLibVersion}",
+        ]
+    }
+}
