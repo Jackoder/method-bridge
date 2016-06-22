@@ -49,4 +49,4 @@ script:
   # - ./gradlew connectedAndroidTest
 
 after_success:
-    - ./gradlew test coveralls
+    - ./gradlew :library:test coveralls
