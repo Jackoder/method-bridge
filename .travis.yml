@@ -49,4 +49,4 @@ cache:
   # - ./gradlew connectedAndroidTest
 
 before_install:
-   - chmod +x gradlewls
+   - chmod +x gradlew
