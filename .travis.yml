@@ -47,6 +47,11 @@ cache:
 # script:
   # - android list target
   # - ./gradlew connectedAndroidTest
+  - ./gradlew build jacocoTestReport assembleAndroidTest
+  - ./gradlew connectedCheck
 
 before_install:
   - chmod +x gradlew
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
