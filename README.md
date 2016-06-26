@@ -1,5 +1,5 @@
-[![](https://jitpack.io/v/Jackoder/method-bridge.svg)](https://jitpack.io/#Jackoder/method-bridge)
-[![](https://travis-ci.org/Jackoder/method-bridge.svg?branch=master)](https://travis-ci.org/Jackoder/method-bridge.svg?branch=master)
+[![jitpack.io][1]][2]
+[![travis-ci][3]][3]
 
 # Method Bridge
 一个简单的方法调用方案
@@ -163,7 +163,7 @@ public void handleSafe() {
 
 **Bug与建议**
 
-欢迎提交提交Bug与建议到 [Issues](https://github.com/Jackoder/method-bridge/issues) 中。
+欢迎提交提交Bug与建议到 [Issues][4] 中。
 
 License
 -------
@@ -181,3 +181,8 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+[1]: https://jitpack.io/v/Jackoder/method-bridge.svg
+[2]: https://jitpack.io/#Jackoder/method-bridge
+[3]: https://travis-ci.org/Jackoder/method-bridge.svg?branch=master
+[4]: issues
