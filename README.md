@@ -185,4 +185,4 @@ License
 [1]: https://jitpack.io/v/Jackoder/method-bridge.svg
 [2]: https://jitpack.io/#Jackoder/method-bridge
 [3]: https://travis-ci.org/Jackoder/method-bridge.svg?branch=master
-[4]: issues
+[4]: https://github.com/Jackoder/method-bridge/issues
